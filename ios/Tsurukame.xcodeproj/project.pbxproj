@@ -876,14 +876,12 @@
 				630FD60F1FC45BDF00D21C1F /* Sources */,
 				630FD6101FC45BDF00D21C1F /* Frameworks */,
 				630FD6111FC45BDF00D21C1F /* Resources */,
-				C90846C9237F1C790068A272 /* Embed Watch Content */,
 				0C9C13E732A68C21AE8F0AA3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				63EF56FD26060BE50038551A /* PBXTargetDependency */,
-				C90846C7237F1C790068A272 /* PBXTargetDependency */,
 			);
 			name = Tsurukame;
 			packageProductDependencies = (
@@ -1789,12 +1787,12 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Resources/Tsurukame.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1114;
 				DEFINES_MODULE = YES;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
-				DEVELOPMENT_TEAM = 7B2GP77Y4A;
+				DEVELOPMENT_TEAM = THYXV49TTB;
 				ENABLE_MODULE_VERIFIER = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = Info.plist;
@@ -1808,8 +1806,10 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.davidsansome.wanikani;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = com.juanv.tsurukame;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = com.juanv.tsurukame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development com.davidsansome.wanikani 1651749118";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Tsurukame-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1826,12 +1826,12 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Resources/Tsurukame.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1114;
 				DEFINES_MODULE = YES;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
-				DEVELOPMENT_TEAM = 7B2GP77Y4A;
+				DEVELOPMENT_TEAM = THYXV49TTB;
 				ENABLE_MODULE_VERIFIER = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = Info.plist;
@@ -1844,9 +1844,11 @@
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.davidsansome.wanikani;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = com.juanv.tsurukame;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = com.juanv.tsurukame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "d5cd9a5d-213c-42f1-b72b-185d1259a0f2";
-				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.davidsansome.wanikani";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Tsurukame-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
